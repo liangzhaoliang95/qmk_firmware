@@ -14,7 +14,7 @@ source "$dir/win_shared_install.sh"
 
 function install_avr {
     rm -f -r "$avrtools"
-    wget "https://blog.zakkemble.net/download/avr-gcc-8.3.0-x86-mingw.zip"
+    #wget "https://blog.zakkemble.net/download/avr-gcc-8.3.0-x86-mingw.zip"
     echo "Extracting AVR toolchain..."
     unzip -q -d . avr-gcc-8.3.0-x86-mingw.zip
     mv avr-gcc-8.3.0-x86-mingw avr8-gnu-toolchain
@@ -25,7 +25,7 @@ function install_avr {
 
 function install_arm {
     rm -f -r "$armtools"
-    wget -O gcc-arm-none-eabi-8-2019-q3-update-win32.zip "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-win32.zip"
+    #wget -O gcc-arm-none-eabi-8-2019-q3-update-win32.zip "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-win32.zip"
     echo "Extracting ARM toolchain..."
     unzip -q -d gcc-arm-none-eabi gcc-arm-none-eabi-8-2019-q3-update-win32.zip
     rm gcc-arm-none-eabi-8-2019-q3-update-win32.zip
